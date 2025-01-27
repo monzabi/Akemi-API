@@ -14,8 +14,6 @@ public class AkemiAPILoader extends JavaPlugin {
     @Override
     public void onEnable() {
         API_LOADER = this;
-
-        this.initialize();
     }
 
     @Override
@@ -24,8 +22,7 @@ public class AkemiAPILoader extends JavaPlugin {
     }
 
 
-    private void initialize() {
+    public void initialize() {
         this.packetName = new PacketName();
-
     }
 }
