@@ -1,0 +1,4 @@
+name: Akemi-API
+version: 0.2-ALPHA
+author: monzabi
+main: org.akemi.api.AkemiAPILoader
