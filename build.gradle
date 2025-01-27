@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id "com.gradleup.shadow" version "8.3.5"
+    //  id 'io.papermc.paperweight.userdev' version '2.0.0-beta.10'
+}
+
+group = 'org.akemi.api'
+version = '0.2-ALPHA'
+
+repositories {
+    mavenCentral()
+
+    maven {
+        name = "papermc"
+        url = uri("https://repo.papermc.io/repository/maven-public/")
+    }
+    maven {
+        name = "jitpack"
+        url = uri("https://jitpack.io")
+    }
+}
+
+dependencies {
+    // 1.8 Spigot
+    compileOnly 'com.github.azbh111:spigot-1.8.8:R'//
+
+    //paperweight.paperDevBundle("1.21.4-R0.1-SNAPSHOT")
+
+    implementation 'org.reflections:reflections:0.10.2'
+
+    compileOnly("org.projectlombok:lombok:1.18.34")
+    annotationProcessor("org.projectlombok:lombok:1.18.34")
+}
